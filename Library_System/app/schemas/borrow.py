@@ -1,11 +1,10 @@
 from pydantic import BaseModel
-from typing import Optional
 
-class Borrow(BaseModel):
-    student_id : int
-    book_id : int
-    librarian_id : int
-    status : str
+
+class BorrowRequest(BaseModel):
+    student_id: int
+    book_id: int
+    librarian_id: int
 
 class UpdateBorrow(BaseModel):
     student_id : int
